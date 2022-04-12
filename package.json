@@ -1,5 +1,5 @@
 {
-  "name": "@uk-export-finance/dtfs-constants",
+  "name": "@UK-Export-Finance/dtfs-constants",
   "version": "0.0.1",
   "description": "This repo contains a set of constants used in the DTFS project",
   "main": "dist/cjs/index.js",
@@ -19,7 +19,7 @@
     "addscope": "node tools/packagejson name @UK-Export-Finance/dtfs-constants"
   },
   "publishConfig": {
-    "@uk-export-finance:registry": "https://npm.pkg.github.com"
+    "@UK-Export-Finance:registry": "https://npm.pkg.github.com"
   },
   "files": [
     "dist"
