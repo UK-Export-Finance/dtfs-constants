@@ -22,17 +22,21 @@ jobs:
           prerelease: false
 
   publish:
+    needs: release
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Install modules
         run: npm install
       - name: Build
         run: npm run build
       - name: Setup .npmrc file to publish to GitHub Packages
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: '14.x'
+          node-version: 12
           registry-url: 'https://npm.pkg.github.com'
           scope: '@UK-Export-Finance'
       - run: npm run addscope
