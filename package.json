@@ -1,5 +1,5 @@
 {
-  "name": "@uk-export-finance/dtfs-constants",
+  "name": "dtfs-constants",
   "version": "0.0.1",
   "description": "This repo contains a set of constants used in the DTFS project",
   "main": "dist/cjs/index.js",
@@ -16,7 +16,7 @@
     "build:types": "node tools/cleanup types && tsc -p config/tsconfig.types.json",
     "clean": "node tools/cleanup",
     "package": "npm run build && npm pack",
-    "addscope": "node tools/packagejson name @UK-Export-Finance/dtfs-constants"
+    "addscope": "node tools/packagejson name @uk-export-finance/dtfs-constants"
   },
   "publishConfig": {
     "access": "public"

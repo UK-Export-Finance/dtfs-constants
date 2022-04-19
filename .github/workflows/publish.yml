@@ -7,28 +7,25 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
+      - name: Setup .npmrc file to publish to npm
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+          registry-url: 'https://registry.npmjs.org'
       - name: Install modules
         run: npm install
       - name: Build
         run: npm run build
-      - name: Setup .npmrc file to publish to npm
-        uses: actions/setup-node@v3
-        with:
-          node-version: 14
-          registry-url: 'https://registry.npmjs.org'
       - name: Publish to npm
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Setup .npmrc file to publish to GitHub Packages
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v1
         with:
-          node-version: 14
+          node-version: '14.x'
           registry-url: 'https://npm.pkg.github.com'
           scope: '@UK-Export-Finance'
       - run: npm run addscope
