@@ -18,9 +18,6 @@
     "package": "npm run build && npm pack",
     "addscope": "node tools/packagejson name @UK-Export-Finance/dtfs-constants"
   },
-  "publishConfig": {
-    "@UK-Export-Finance:registry": "https://npm.pkg.github.com"
-  },
   "files": [
     "dist"
   ],
