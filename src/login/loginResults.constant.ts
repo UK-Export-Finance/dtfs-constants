@@ -1,6 +1,6 @@
 export const loginResults = {
-  userNotFound: 'user not found',
-  userIsBlocked: 'user is blocked',
-  incorrectPassword: 'incorrect password',
-  userIsDisabled: 'user is disabled',
+  userNotFound: 'User not found',
+  incorrectPassword: 'Incorrect password',
+  userIsDisabled: 'User is disabled',
+  userIsBlocked: 'User is blocked',
 };
