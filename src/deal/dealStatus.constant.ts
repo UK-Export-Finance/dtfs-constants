@@ -13,6 +13,7 @@ export const DEAL_STATUS = {
   NOT_STARTED: "Not started",
   IN_PROGRESS: "In progress",
   COMPLETED: "Completed",
+  INCOMPLETE: 'Incomplete',
   EXPIRED: "Expired",
   WITHDRAWN: "Withdrawn",
 };

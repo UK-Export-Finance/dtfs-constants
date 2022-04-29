@@ -1,0 +1,1 @@
+export const PASSWORD_UPDATE = '41235821-7e52-4d63-a773-fa147362c5f0';
