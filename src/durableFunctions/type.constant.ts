@@ -1,4 +1,4 @@
-export const TYPE = {
+export const DURABLE_FUNCTION_TYPE = {
   ACBS: 'ACBS',
   NUMBER_GENERATOR: 'NUMBER_GENERATOR',
 };
