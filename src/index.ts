@@ -1,6 +1,7 @@
 export * from './activity';
 export * from './deal';
 export * from './durableFunctions';
+export * from './decisions';
 export * from './emailTemplates';
 export * from './eStore';
 export * from './facility';
