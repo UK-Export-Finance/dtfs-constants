@@ -42,7 +42,7 @@ jobs:
         id: release
         with:
           release-type: node
-          package-name: @uk-export-finance/dtfs-constants
+          package-name: uk-export-finance/dtfs-constants
       - uses: actions/checkout@v3
         if: ${{ steps.release.outputs.release_created }}
       - name: Setup .npmrc file to publish to npm
@@ -52,7 +52,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
         if: ${{ steps.release.outputs.release_created }}
       - name: Install modules
-      - run: npm ci
+        run: npm ci
         if: ${{ steps.release.outputs.release_created }}
       - name: Build
         run: npm run build
