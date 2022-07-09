@@ -1,12 +1,11 @@
-export * from './dealType.constant';
-export * from './submissionType.constant';
+export * as DEAL_TYPE from './dealType.constant';
+export * as SUBMISSION_TYPE from './submissionType.constant';
 export * from './applicationGroup.constant';
 export * from './dealStatus.constant';
 export * from './smeType.constant';
 export * from './supplierType.constant';
-export * from './sortBy.constant';
 export * from './dealStageTFM.constant';
 export * from './creditRating.constant';
 export * from './dealCommentTypePortal.constant';
 export * from './lossGivenDefault.constant';
-export * from './probabilityofDefault.constant';
+export * from './probabilityOfDefault.constant';

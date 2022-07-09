@@ -1,4 +1,4 @@
-import { GROUP_TITLES } from "./groupTitles.constant";
+import { GROUP_TITLES } from './groupTitles.constant';
 
 export const AIN_AND_MIA = {
   GROUP_1: {

@@ -1,4 +1,4 @@
-export const templates = {
+export const TEMPLATES = {
   NEW_ACCOUNT: '354031c8-8ca5-4ac7-9356-00613faf793c',
   BLOCKED: '82506983-cb85-4f33-b962-922b850be7ac',
   UNBLOCKED: '44959d08-6389-4f27-a6be-2faae8bea711',

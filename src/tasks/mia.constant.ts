@@ -1,15 +1,10 @@
-import { GROUP_TITLES } from "./groupTitles.constant";
-import { AIN_AND_MIA } from "./ainAndMia.constant";
-import { MIA_GROUP_1_TASKS } from "./miaGroupOneTasks.constant";
-import { MIA_GROUP_3_TASKS } from "./miaGroupThreeTasks.constant";
-import { MIA_GROUP_4_TASKS } from "./miaGroupFourTasks.constant";
-import { MIA_ADVERSE_HISTORY_GROUP_TASKS } from "./miaAdverseHistoryGroupTasks.constant";
-import {
-  BUSINESS_SUPPORT,
-  UNDERWRITER_MANAGERS,
-  UNDERWRITERS,
-  RISK_MANAGERS,
-  UNDERWRITING_SUPPORT } from "../teams";
+import { GROUP_TITLES } from './groupTitles.constant';
+import { AIN_AND_MIA } from './ainAndMia.constant';
+import { MIA_GROUP_1_TASKS } from './miaGroupOneTasks.constant';
+import { MIA_GROUP_3_TASKS } from './miaGroupThreeTasks.constant';
+import { MIA_GROUP_4_TASKS } from './miaGroupFourTasks.constant';
+import { MIA_ADVERSE_HISTORY_GROUP_TASKS } from './miaAdverseHistoryGroupTasks.constant';
+import { BUSINESS_SUPPORT, UNDERWRITER_MANAGERS, UNDERWRITERS, RISK_MANAGERS, UNDERWRITING_SUPPORT } from '../teams';
 
 export const MIA = {
   GROUP_1: {

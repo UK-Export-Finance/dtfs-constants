@@ -1,5 +1,5 @@
-import { GROUP_TITLES } from "./groupTitles.constant";
-import { AIN_AND_MIA } from "./ainAndMia.constant";
+import { GROUP_TITLES } from './groupTitles.constant';
+import { AIN_AND_MIA } from './ainAndMia.constant';
 import { BUSINESS_SUPPORT } from '../teams';
 
 export const AIN = {

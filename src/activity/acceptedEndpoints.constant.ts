@@ -1,4 +1,1 @@
-export const ACCEPTED_ENDPOINTS = [
-  'deal',
-  'facility',
-];
+export const ACCEPTED_ENDPOINTS = ['deal', 'facility'];
