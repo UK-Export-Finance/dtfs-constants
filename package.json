@@ -1,6 +1,6 @@
 {
   "name": "@uk-export-finance/dtfs-constants",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This repo contains a set of constants used in the DTFS project",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

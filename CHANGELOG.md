@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/UK-Export-Finance/dtfs-constants/compare/v1.0.0...v1.0.1) (2022-07-09)
+
+
+### Bug Fixes
+
+* fixed the Publish & Release action ([#20](https://github.com/UK-Export-Finance/dtfs-constants/issues/20)) ([fc590d5](https://github.com/UK-Export-Finance/dtfs-constants/commit/fc590d50b4447a4080ad457d15d187dff766750e))
+
 ## 1.0.0 (2022-07-09)
 
 
