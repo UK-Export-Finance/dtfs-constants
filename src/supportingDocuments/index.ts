@@ -1,1 +1,1 @@
-export * from './gefDocuments.constants';
+export * from './documentType.constant';

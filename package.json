@@ -1,6 +1,6 @@
 {
   "name": "@uk-export-finance/dtfs-constants",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "This repo contains a set of constants used in the DTFS project",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -16,7 +16,9 @@
     "build:types": "node tools/cleanup types && tsc -p config/tsconfig.types.json",
     "clean": "node tools/cleanup",
     "package": "npm run build && npm pack",
-    "addscope": "node tools/packagejson name @uk-export-finance/dtfs-constants"
+    "addscope": "node tools/packagejson name @uk-export-finance/dtfs-constants",
+    "lint": "eslint --ext .ts src/",
+    "lint:fix": "eslint --ext .ts src/ --fix"
   },
   "publishConfig": {
     "access": "public"
