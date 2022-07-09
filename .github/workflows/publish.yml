@@ -4,36 +4,6 @@ on:
   push:
     branches: [ main ]
 
-# jobs:
-#   publish:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v2
-#       - name: Setup .npmrc file to publish to npm
-#         uses: actions/setup-node@v1
-#         with:
-#           node-version: '14.x'
-#           registry-url: 'https://registry.npmjs.org'
-#       - name: Install modules
-#         run: npm install
-#       - name: Build
-#         run: npm run build
-#       - name: Publish to npm
-#         run: npm publish --access public
-#         env:
-#           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-#       - name: Setup .npmrc file to publish to GitHub Packages
-#         uses: actions/setup-node@v1
-#         with:
-#           node-version: '14.x'
-#           registry-url: 'https://npm.pkg.github.com'
-#           scope: '@UK-Export-Finance'
-#       - run: npm run addscope
-#       - name: Publish to GitHub Packages
-#         run: npm publish
-#         env:
-#           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -43,20 +13,30 @@ jobs:
         with:
           release-type: node
           package-name: uk-export-finance/dtfs-constants
-      - uses: actions/checkout@v3
+          extra-files: |
+            README.md
+            CHANGELOG.md
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+        # ensure that `Setup` occurs only when a new release is created:
         if: ${{ steps.release.outputs.release_created }}
-      - name: Setup .npmrc file to publish to npm
+      - name: Setup the NPM registry
         uses: actions/setup-node@v3
         with:
           node-version: 16
           registry-url: 'https://npm.pkg.github.com'
+        # ensure that the packages are installed only when a new release is created:
         if: ${{ steps.release.outputs.release_created }}
-      - name: Install modules
+      - name: Install the modules
         run: npm ci
+        # ensure that the package is built only when a new release is created:
         if: ${{ steps.release.outputs.release_created }}
-      - name: Build
+      - name: Build the package
         run: npm run build
-      - run: npm publish --access public
+        # ensure that the publication only occurs when a new release is created:
+        if: ${{ steps.release.outputs.release_created }}
+      - name: Publish the package to NPM
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
         if: ${{ steps.release.outputs.release_created }}

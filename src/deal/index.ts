@@ -8,4 +8,4 @@ export * from './dealStageTFM.constant';
 export * from './creditRating.constant';
 export * from './dealCommentTypePortal.constant';
 export * from './lossGivenDefault.constant';
-export * from './probabilityOfDefault.constant';
+export * from './probabilityofDefault.constant';
