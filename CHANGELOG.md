@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/UK-Export-Finance/dtfs-constants/compare/v1.0.2...v1.0.3) (2022-07-09)
+
+
+### Miscellaneous
+
+* removed unused packages. used `tsc` to compile the code ([#24](https://github.com/UK-Export-Finance/dtfs-constants/issues/24)) ([e66daa8](https://github.com/UK-Export-Finance/dtfs-constants/commit/e66daa8bd1d67a7d9c93408f347fe7c440120340))
+
 ## [1.0.2](https://github.com/UK-Export-Finance/dtfs-constants/compare/v1.0.1...v1.0.2) (2022-07-09)
 
 

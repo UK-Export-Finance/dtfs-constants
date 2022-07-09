@@ -1,6 +1,6 @@
 {
   "name": "@uk-export-finance/dtfs-constants",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "DTFS constants",
   "main": "dist/index.js",
   "scripts": {
