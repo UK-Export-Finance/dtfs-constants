@@ -8,7 +8,8 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: google-github-actions/release-please-action@v3
+      - name: Release action
+        uses: google-github-actions/release-please-action@v3
         id: release
         with:
           release-type: node
@@ -24,7 +25,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: 'https://registry.npmjs.org'
         # ensure that the packages are installed only when a new release is created:
         if: ${{ steps.release.outputs.release_created }}
       - name: Install the modules
@@ -35,7 +36,7 @@ jobs:
         run: npm run build
         # ensure that the publication only occurs when a new release is created:
         if: ${{ steps.release.outputs.release_created }}
-      - name: Publish the package to NPM
+      - name: Publish the package
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
