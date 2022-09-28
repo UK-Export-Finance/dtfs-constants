@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/UK-Export-Finance/dtfs-constants/compare/v1.0.3...v1.0.4) (2022-09-28)
+
+
+### Miscellaneous
+
+* updated all npm packages ([#27](https://github.com/UK-Export-Finance/dtfs-constants/issues/27)) ([63f8423](https://github.com/UK-Export-Finance/dtfs-constants/commit/63f8423b43cacb3095fbc9efa5758c69d9cbc169))
+
 ## [1.0.3](https://github.com/UK-Export-Finance/dtfs-constants/compare/v1.0.2...v1.0.3) (2022-07-09)
 
 
